@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Production Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #f5c542;
+      text-decoration: none;
+    }
+
+    header {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(180deg, #000000, #111111);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: auto;
+      color: #cccccc;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 30px;
+      background: #f5c542;
+      color: #000;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+    }
+
+    /* Showreel */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+    }
+
+    /* Portfolio */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .card h3 {
+      margin-top: 15px;
+    }
+
+    /* Clients */
+    .clients {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 30px;
+      align-items: center;
+    }
+
+    .clients img {
+      width: 100%;
+      filter: grayscale(100%);
+      opacity: 0.7;
+    }
+
+    /* Services */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+
+    .service-box {
+      background: #1a1a1a;
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    /* Contact */
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 10px 0;
+      color: #cccccc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #000;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header>
+    <h1>Your Production Studio</h1>
+    <p>We create cinematic visuals and professional video content for brands, events and businesses.</p>
+    <a href="#contact" class="btn">Contact Us</a>
+  </header>
+
+  <!-- SHOWREEL -->
+  <section>
+    <h2>Showreel</h2>
+    <div class="video-container">
+      <!-- Tukar video YouTube awak -->
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section>
+    <h2>Past Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="project1.jpg" alt="Project 1">
+        <h3>Corporate Video</h3>
+        <p>Client Name</p>
+      </div>
+
+      <div class="card">
+        <img src="project2.jpg" alt="Project 2">
+        <h3>Event Coverage</h3>
+        <p>Client Name</p>
+      </div>
+
+      <div class="card">
+        <img src="project3.jpg" alt="Project 3">
+        <h3>Commercial Video</h3>
+        <p>Client Name</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENTS -->
+  <section>
+    <h2>Our Clients</h2>
+    <div class="clients">
+      <img src="logo1.png" alt="Client Logo">
+      <img src="logo2.png" alt="Client Logo">
+      <img src="logo3.png" alt="Client Logo">
+      <img src="logo4.png" alt="Client Logo">
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section>
+    <h2>Services</h2>
+    <div class="services">
+      <div class="service-box">Video Production</div>
+      <div class="service-box">Corporate & Company Profile</div>
+      <div class="service-box">Event Coverage</div>
+      <div class="service-box">Editing & Post-Production</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact">
+      <p>📞 Phone / WhatsApp: <a href="https://wa.me/60123456789">+60 12-345 6789</a></p>
+      <p>📧 Email: your@email.com</p>
+      <p>📍 Malaysia</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Your Production Studio. All rights reserved.
+  </footer>
+
+</body>
+</html>
